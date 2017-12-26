@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Website">
+    <meta name="author" content="Labs and Ware">
 
     <title>HN Conseil</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/creative.css">
-    
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/hn.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -25,15 +27,17 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-</head>
+  </head>
+  <body id="page-top" data-spy="scroll">
 
-<!-- The #page-top ID is part of the scrolling feature - the data-spy and data-target are part of the built-in Bootstrap scrollspy function -->
+    <div class="head">
+      <div class="container head-brand">
+        <img src="./img/logos/header.png" class="img-responsive">
+      </div>
+    </div>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
-    <!-- Navigation -->
-   <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
+     <nav id="mainNav" class="navbar navbar-inverse navbar-custom navbar-static-top">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -42,41 +46,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">HN Conseil</a>
+                
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                  <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <span class="caret"></a>
-
-                      <ul class="dropdown-menu">
-                        <li><a href="#">History & Mission</a></li>
-                        <li><a href="view/ourpointofview.html">Our Point of View</a></li>
-                        <li><a href="#">Case Study</a></li>
-                        <li><a href="#">Team Members</a></li>
-                        
-                      </ul>
+                <ul class="nav navbar-nav align-center">
+                  <li>
+                      <a class="page-scroll" href="#page-top">Home</a>
                   </li>
                   <li>
-                      <a class="page-scroll" href="#services">Services</a>
-                  </li>
-                  <!-- <li>
-                      <a class="page-scroll" href="#portfolio">Portfolio</a>
-                  </li> -->
-                  <li>
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Brand <span class="caret"></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Partners</a></li>
-                        <li><a href="#">Ethics Of Job Handling</a></li>
-                        <li><a href="#">Something else here</a></li>
-                      </ul>
+                    <a class="page-scroll" href="#about">About</a>
                   </li>
                   <li>
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company News</a>
+                      <a class="page-scroll " href="#services">Services</a>
                   </li>
-                  <li>
+                  <li >
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Carrers  <span class="caret"></a>
                     <ul class="dropdown-menu">
                       <li><a href="#">Job Search</a></li>
@@ -84,7 +69,7 @@
                       <li><a href="#">Grow Your Career</a></li>
                     </ul>
                   </li>
-                  <li>
+                  <li >
                     <a class="page-scroll" href="#contact">Contact</a>
                   </li>
                 </ul>
@@ -94,229 +79,122 @@
         <!-- /.container-fluid -->
     </nav>
 
-   <header>
+    <header>
         <div class="header-content">
             <div class="header-content-inner">
-                <h1>Church Focused Research Organization</h1>
-                <hr>
-                <p>to be about the Father's Business by supporting and building CHURCH'S HEALTH through an INFORMED perspective</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+              <h2 class="visible-xs-inline-block" style="color: #65b4dd">New Solutions; <br />
+                    Timeless Institutions</h2>
+              <div class="row">
+                <div class="col-md-5 visible-lg-inline-block" style="top: 130px">
+                  <h1 >New Solutions; <br />
+                    Timeless Institutions</h1>
+                </div>
+                <div class="col-md-3">
+                  <img src="./img/logos/logo.png">
+                </div>
+              </div>
             </div>
         </div>
     </header>
 
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Who We Are!</h2>
-                    <hr class="light">
-                    <p class="text-faded">HN Consiel is highly integrated using the mysteries in the gospel as described in 1 Corinthians  Chapter 3 and 4 and balanced statistical information to help improve the health of the church – Spiritually, Functionally, Technically, Personally, Emotionally, Environmentally and Socially. These areas are rooted and evaluated on the 5 fold ministry philosophies.</p>
-                    <!-- <a href="#" class="btn btn-default btn-xl">Get Started!</a> -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="img/services/Consulting.png" class="img-thumbnail">
-                        <h3>Consulting</h3>
-                        <ul class="text-muted list-unstyled">
-                          <li>Church Development & Strategy</li>
-                          <li>Church Management & Consulting</li>
-                        </ul> 
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="img/services/analyzing.png" class="img-thumbnail">
-                        <h3>Analyzing</h3>
-                        <ul class="text-muted list-unstyled">
-                          <li>Vision 360</li>
-                          <li>Positioning </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                         <img src="img/services/monitor.png" class="img-thumbnail">
-                        <h3>Monitor</h3>
-                        <ul class="text-muted list-unstyled">
-                          <li>Church Health</li>
-                          <li>Church Growth</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <img src="img/services/training.png" class="img-thumbnail">
-                        <h3>Training</h3>
-                        <ul class="text-muted list-unstyled">
-                          <li>Management and leadership Workshop</li>
-                          <li>Capacity  and Team building</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/sample1.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/sample2.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/sample3.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/sample4.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/sample1.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
-                        <img src="img/portfolio/sample4.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-
-
     <aside class="bg-dark">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2><q>The best way to stay HEALTHY is to keep doing a regular CHECK-UP</q></h2>
-                <!-- <a href="#" class="btn btn-default btn-xl wow tada">Contact Us Today</a> -->
-            </div>
+      <div class="container text-center">
+        <div class="call-to-action">
+          <h1>HN Conseil <span style="color: #65b4dd">ABM Approach</span></h1>
+          <h4>Assessing, Building and Monitoring organizational's health 
+            through an informed perspective is our main focus.</h4>
         </div>
+      </div>
     </aside>
 
-    <section id="contact">
-      <div class="container">
+    <section id="about">
+      <div class="container content-section">
         <div class="row">
-          <div class="col-lg-8 col-lg-offset-2 text-center">
-              <h2 class="section-heading">Let's Get In Touch!</h2>
-              <hr class="primary">
-              <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+          <div class="col-md-3">
+            <img src="./img/homepage/about.png" class="visible-lg-inline-block">
+            <span class="visible-xs-inline-block"><img src="./img/homepage/about.png" class="img-responsive"></span>
           </div>
-          <div class="col-lg-4 col-lg-offset-2 text-center">
-              <i class="fa fa-phone fa-3x wow bounceIn"></i>
-              <p>123-456-6789</p>
-          </div>
-          <div class="col-lg-4 text-center">
-              <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-              <p><a href="mailto:your-email@your-domain.com">dtytomi@gmail.com</a></p>
+          <div class="col-md-offset-2 col-md-7">
+            <h2>Our Philosophy</h2>
+            <p> We are your strategic partners ready to help you facilitate your needs from conception to actual implementation with deep applicable insights. Our philosophy is centered on, the complete knowledge of people, environment, brands marketing, institute and research management.</p>
+            <br />
+            <blockquote>the complete knowledge of people, environment, brands marketing, institute and research management</blockquote>
+            <br />
+            <p>All tools and models are disruptive, innovative and revolutionary; tested and proven to meet business objectives by our Research and Development (R&ampD) unit among various businesses and organizations across several areas of research inherent to help you interprete insights and from your brand. We believe that knowledge should be shared and affordable to startups and established systems alike and being able to constantly deliver on its promise.</p>
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <br />
     </section>
 
+    <aside class="features">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h4 class="section-subheading text-muted">Our proprietary solution covers areas such as:</h4>
+            <h2 class="section-heading">What Stand's Us Out</h2>
+          </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="features-thumbnail-odd">
+              <i class="fa fa-map-marker fa-4x" style="margin-top: 42px;  margin-left: 52px; color:white"></i>
+            </div>
+            <h3 class="features-header">Market Research</h3>
+            <p class="features-paragraph">This enables us to see and execute research in a different way.</p>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="features-thumbnail-even">
+              <i class="fa fa-handshake-o fa-4x" style="margin-top: 42px;  margin-left: 35px; color:white"></i>
+            </div>
+            <h3 class="features-header">Social Research</h3>
+            <p class="features-paragraph">This enables us to see and execute research in a different way.</p>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="features-thumbnail-odd">
+              <i class="fa fa-graduation-cap fa-4x" style="margin-top: 42px;  margin-left: 35px; color:white" ></i>
+            </div>
+            <h3 class="features-header">Academic Research</h3>
+            <p class="features-paragraph">This enables us to see and execute research in a different way.</p>
+          </div>
+          <div class="col-sm-6 col-md-3"> 
+            <div class="features-thumbnail-even">
+              <i class="fa fa-line-chart fa-4x" style="margin-top: 42px;  margin-left: 35px; color:white"></i>
+            </div>
+            <h3 class="features-header">Advisory Research</h3>
+            <p class="features-paragraph">This enables us to see and execute research in a different way.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="careers">
+      <div class="container text-center">
+        
+      </div>
+    </aside>
+
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap.min.js"></script>
 
     <!-- Anglar Core JavaScript -->
-    <script src="js/angular.js"></script>
+    <script src="vendor/angular.js"></script>
 
     <!-- Scrolling Nav JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/creative.js"></script>
-    
+    <script src="vendor/jquery.easing.min.js"></script>
+    <script src="vendor/jquery.fittext.js"></script>
+    <script src="vendor/wow.min.js"></script>
+    <script src="js/hn.js"></script>
 
-</body>
-
+  </body>
 </html>
