@@ -55,3 +55,45 @@
   })
 
 })(jQuery);
+
+function init() {
+    var e= {
+        zoom:15,
+        center:new google.maps.LatLng(6.642907, (3.342938)),
+        disableDefaultUI:!0,
+        scrollwheel:!1,
+        draggable:!1,
+        styles: [
+            {
+                "featureType": "landscape",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {
+                        "visibility": "on"
+                    }
+                ]
+            }
+        ]
+    }
+    ,
+    t=document.getElementById("map");
+    map=new google.maps.Map(t, e);
+    var l="img/map-marker.png",
+    o=new google.maps.LatLng(6.642907, (3.342938));
+    new google.maps.Marker( {
+        position: o, map: map, 
+    }
+    ),
+    marker = new google.maps.Marker({
+        position: myLatLng,
+        title: 'Hello World!'
+    });
+
+    marker.setMap(map);
+};
+
+var map=null;
+google.maps.event.addDomListener(window, "load", init),
+google.maps.event.addDomListener(window, "resize", function() {
+    map.setCenter(new google.maps.LatLng(6.642907, (3.342938)))
+});
