@@ -164,13 +164,13 @@ section h4.section-subheading {
   background-color: rgba(212, 212, 212, 0.67);
 }
 
-aside h2.section-heading {
+section h2.section-heading {
   font-size: 40px;
   margin-top: 0;
   margin-bottom: 15px;
   text-transform: capitalize;
 }
-aside h4.section-subheading {
+section h4.section-subheading {
   font-size: 16px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: capitalize;
@@ -217,4 +217,16 @@ aside h4.section-subheading {
   text-align: justify;
   font-size: 14px;
   color: #808080;
+}
+
+.cares {
+  width: 100%;
+  padding-top: 50px;
+  background-image: url(../img/homepage/hn.png);
+  background-repeat: no-repeat;
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
